@@ -5,6 +5,8 @@ AI Image Generation & Sharing Platform
 Create AI is a full-stack web application that allows users to generate images from text prompts using AI, preview them instantly, and share them as posts.
 The project focuses on a modern UI, a clean backend architecture, and real-world AI integration.
 
+
+
 🚀 Features
 
 🧠 Generate images from text prompts using AI
@@ -21,7 +23,10 @@ The project focuses on a modern UI, a clean backend architecture, and real-world
 
 ⚡ Fast and modern UI with dark theme
 
+
+
 🛠️ Tech Stack
+
 🌐 Frontend
 
 React.js
@@ -33,6 +38,7 @@ Material UI Icons
 Axios
 
 Lazy Load Images
+
 
 🧪 Backend
 
@@ -50,6 +56,7 @@ dotenv
 
 CORS
 
+
 🤖 AI Technology
 
 Replicate AI
@@ -62,7 +69,10 @@ Returns generated image URLs
 
 Images are converted to Base64 for frontend display
 
+
+
 🧠 How the Project Works
+
 1️⃣ Image Generation Flow
 
 User enters:
@@ -83,6 +93,7 @@ Backend converts the image to Base64
 
 Frontend displays the generated image instantly
 
+
 2️⃣ Posting Images
 
 After generating an image, user clicks Post
@@ -92,6 +103,7 @@ Backend uploads image to Cloudinary
 Image URL, author, and prompt are saved in MongoDB
 
 Post becomes visible on the home page
+
 
 3️⃣ Exploring Posts
 
