@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+ImaiJin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI Image Generation & Sharing Platform
 
-## Available Scripts
+Create AI is a full-stack web application that allows users to generate images from text prompts using AI, preview them instantly, and share them as posts.
+The project focuses on a modern UI, a clean backend architecture, and real-world AI integration.
 
-In the project directory, you can run:
+🚀 Features
+🧠 Generate images from text prompts using AI
+🖼️ Live preview of generated images
+✍️ Add author name and prompt
+📤 Post generated images to a public feed
+🔍 Explore posts created by others
+📱 Fully responsive (desktop & mobile)
+⚡ Fast and modern UI with dark theme
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🌐 Frontend
+React.js
+Styled Components
+Material UI Icons
+Axios
+Lazy Load Images
 
-### `npm test`
+🧪 Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+Cloudinary
+dotenv
+CORS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🤖 AI Technology
+Replicate AI
+Uses Stable Diffusion models
+Converts text prompts into images
+Returns generated image URLs
+Images are converted to Base64 for frontend display
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧠 How the Project Works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1️⃣ Image Generation Flow
+User enters:
+Name
+Text prompt
+Frontend sends the prompt to the backend
+Backend calls Replicate AI
+Replicate generates the image using a Stable Diffusion model
+Image URL is returned to backend
+Backend converts the image to Base64
+Frontend displays the generated image instantly
 
-### `npm run eject`
+2️⃣ Posting Images
+After generating an image, user clicks Post
+Backend uploads image to Cloudinary
+Image URL, author, and prompt are saved in MongoDB
+Post becomes visible on the home page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3️⃣ Exploring Posts
+Posts are fetched from MongoDB
+Displayed in a responsive masonry-style grid
+Hover effects show prompt and author
+Lazy loading improves performance
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
